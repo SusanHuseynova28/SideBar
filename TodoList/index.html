@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="h-screen bg-gradient-to-r from-pink-500 to-violet-700 flex justify-center items-center">
+        <div class="flex gap-2 flex-col">
+            <div class="w-[500px]  bg-purple-400 rounded-lg p-6">
+                <input type="text" class="block mx-auto w-[400px] p-2 bg-white rounded" id="sss1" placeholder="Add Your Task">
+                <button type="button" class="block mx-auto mt-4 w-[200px] p-2 bg-white rounded" id="btn1">Add Task</button>
+            </div>
+            <div class="w-[500px] bg-white rounded-lg p-6">
+                <ul id="sss2" class="list-disc pl-5"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

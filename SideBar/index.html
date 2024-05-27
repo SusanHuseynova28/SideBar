@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SideBar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .hide {
+            transform: translateX(-85%);
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar1 {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-[300px] h-lvh bg-violet-400 sidebar1 hide">
+        <div class="flex justify-end pr-2">
+            <i class="fa-solid fa-bars showbar1 text-4xl text-white mt-2 cursor-pointer"></i>
+            <i class="fa-solid fa-calendar-xmark hidebar1 text-4xl text-white pt-2 cursor-pointer hidden"></i>
+        </div>
+
+        <div class="">
+            <h1 class="text-4xl text-white hover:bg-violet-600 italic text-center mt-2">
+                SPLASH
+            </h1>
+        </div>
+        <ul class="text-white italic text-3xl pl-4 mt-10 flex flex-col gap-4">
+            <li class="hover:bg-violet-600 cursor-pointer">Home</li>
+            <li class="hover:bg-violet-600 cursor-pointer">About</li>
+            <li class="hover:bg-violet-600 cursor-pointer">Pages</li>
+            <li class="hover:bg-violet-600 cursor-pointer">Contact</li>
+        </ul>
+        <div class="mt-10 pl-4 flex flex-col gap-4">
+            <p class="text-white text-xl hover:bg-violet-600 italic">
+                Subscribe for Newsletter
+            </p>
+            <input type="email" class="p-3 w-[200px] text-center" placeholder="Enter Email Address" />
+        </div>
+        <div class="">
+            <p class="text-white pl-4 mt-10 w-[250px] hover:bg-violet-600 italic">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                provident, praesentium assumenda
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+     
+</body>
+
+</html>
